@@ -1,11 +1,6 @@
 {
   "tarefas": [
     {
-      "descricao": "Aprender react",
-      "concluido": true,
-      "id": 1
-    },
-    {
       "descricao": "Aprender react native",
       "concluido": false,
       "id": 2
@@ -19,6 +14,22 @@
       "descricao": "Axios",
       "concluido": false,
       "id": 4
+    },
+    {
+      "descricao": "Aprender Javão",
+      "concluida": false,
+      "id": 5
+    },
+    {
+      "descricao": "Falar com Marcelo Assis ",
+      "concluida": false,
+      "id": 6
+    },
+    {
+      "descricao": "E ouvir um esporro do Marcelo Carius",
+      "concluida": false,
+      "id": 7,
+      "concluido": false
     }
   ],
   "usuarios": [
