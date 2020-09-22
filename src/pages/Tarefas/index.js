@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 import { FiCircle, FiCheckCircle, FiDelete } from 'react-icons/fi'
-import {Link} from 'react-router-dom';
-import { Form, ErrorMenssage, Tasks, Header } from './style.js';
-import logoImg from '../../assets/logo.png'
+import { Form, ErrorMenssage, Tasks } from './style.js';
+import Header from '../../components/Header'
 
 const Tarefas = () => {
     //Definindo o estado dos componentes
@@ -27,7 +26,7 @@ const Tarefas = () => {
     //Renderiza os Tasks toda vez que a pagina é carregada
     useEffect(() => {
         loadTasks();
-    }, [])
+    }, []);
 
     async function handleAddTask(e) {
         e.preventDefault();
@@ -77,22 +76,7 @@ const Tarefas = () => {
 
     return (
         <>
-            <Header>
-                <img src={logoImg}alt="Todo"></img>
-            
-                <ul>
-                    <li>
-                        <Link to="/">
-                            Dashbord
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/tarefas">
-                            Tarefas
-                        </Link>
-                    </li>
-                </ul>
-            </Header>
+            <Header/>
 
             <h1> Lista de Tarefas </h1>
 
